@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Madhavi2194/Venia/static/css/main.68da215a.css",
-    "main.js": "/Madhavi2194/Venia/static/js/main.da1e14dc.js",
+    "main.js": "/Madhavi2194/Venia/static/js/main.caf82cbd.js",
     "static/media/banner_image.webp": "/Madhavi2194/Venia/static/media/banner_image.a23eaa7b7e8d284753fd.webp",
     "static/media/sweat.png": "/Madhavi2194/Venia/static/media/sweat.be8a333ac8b292aee147.png",
     "static/media/materials.png": "/Madhavi2194/Venia/static/media/materials.ac3c80afb98202d30c79.png",
@@ -10,10 +10,10 @@
     "static/media/arrow-down-grey.svg": "/Madhavi2194/Venia/static/media/arrow-down-grey.9a22787655b0b5aa0035b9a0c8539562.svg",
     "index.html": "/Madhavi2194/Venia/index.html",
     "main.68da215a.css.map": "/Madhavi2194/Venia/static/css/main.68da215a.css.map",
-    "main.da1e14dc.js.map": "/Madhavi2194/Venia/static/js/main.da1e14dc.js.map"
+    "main.caf82cbd.js.map": "/Madhavi2194/Venia/static/js/main.caf82cbd.js.map"
   },
   "entrypoints": [
     "static/css/main.68da215a.css",
-    "static/js/main.da1e14dc.js"
+    "static/js/main.caf82cbd.js"
   ]
 }
