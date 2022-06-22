@@ -25,7 +25,7 @@ function Offer() {
             </div>
             <div className="cart-left-section">
             <div className="cart-accordian-text-right">
-                <p>20% discount applied</p>
+                <p>40% discount applied</p>
             </div>
             <div className="cart-accordian-down-arrow">
             <img src={down}  className="cart-accordian-down" />
