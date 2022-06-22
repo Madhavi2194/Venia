@@ -4,10 +4,10 @@ import { useState } from "react";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-
 import { selectedProduct, removeSelectedProduct, addTOCart } from '../../redux/actions/productsActions';
 import { useEffect } from 'react';
-import ThumbnailCaraousal from '../ThumbnailCaraousal/ThumbnailCaraousal';
+import Gallery from '../Gallery/Gallery';
+
 
 
 
@@ -62,12 +62,13 @@ function ProductDetails() {
 
 
     return (
-        <div>
+        <div >
             <div className='productdetails-wrapper'>
-                <div className='product-wrapper'>
-                    <ThumbnailCaraousal image={image}></ThumbnailCaraousal>
-                    {/* <img src={product.image} alt={title} className="product-img" id="ti-1"/> */}
-                </div>
+           
+                    <div className='product-wrapper'>
+                       <Gallery image={image}></Gallery>
+                     </div>
+
                 <div className='product-description'>
 
                     <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 px-20">
@@ -75,7 +76,7 @@ function ProductDetails() {
                     </div>
                     <h4 className='display-l-36- '>{title}</h4>
                     <p className='display-s-20- mb-16'>$ {price}</p>
-                    <div className="mb-16"> Star count:(160)</div>
+                    
                     <span className='mb-16'><img src={require("../../assests/heart.png")} /></span>
                     <p className='regular-heading-m-16- mb-16 border-line pt-18 '>{product.description}</p>
                     <p className='regular-heading-l-20- mb-16'>Color</p>

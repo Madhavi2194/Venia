@@ -3,9 +3,9 @@ import './productlist.scss';
 import axios from 'axios';
 import {useDispatch, useSelector} from "react-redux";
 import {setProducts} from '../../redux/actions/productsActions';
-//import { selectedProduct, removeSelectedProduct,} from "../../redux/actions/productsActions";
 import Productdetails from "../product/product";
 import Sidebar from '../Sidebar/Sidebar';
+import loader from '../../assests/loader.gif'
 
 
 
@@ -37,9 +37,14 @@ function ProductList() {
             </div>
 
             <div className="grid-child-product">
+            
+              {products.length != 0 ? 
               <div className="grid-container-inner"  >
                 <Productdetails/>
               </div>
+               : <center><span><img src={loader} className="loader-img" /></span></center>
+
+              }
             </div>
           </div>
           

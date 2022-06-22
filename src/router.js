@@ -12,7 +12,7 @@ const Router = () => (
 
             <Routes>
 
-                <Route path="/" element={
+                <Route path="venia" element={
 
                     <Home/>
 

@@ -21,7 +21,9 @@
     .filter-section {
         margin: 10px 0;
 
-
+        p{
+            padding: 12px 0;
+        }
 
         ul {
             padding: 0;
@@ -64,6 +66,9 @@
 
 
     .sidebar-colors-wrapper {
+        div {
+            padding:12px 0;
+        }
         p {
             font: var(--unnamed-font-style-normal) normal 600 var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-muli);
             letter-spacing: var(--unnamed-character-spacing-0);
@@ -82,6 +87,7 @@
                 width: 64px;
                 height: 40px;
                 border-radius: 6px;
+                
             }
 
             .black-color {

@@ -1,5 +1,9 @@
 import React from "react";
 import './Recentlyviewed.scss';
+import bangle from '../../../assests/bangle.jpg';
+import hoodie from '../../../assests/Hoodie.jpg';
+import tshrit from '../../../assests/tshirt.jpg';
+
 
 
 function Recentlyviewed () {
@@ -15,32 +19,32 @@ function Recentlyviewed () {
              
                 <div className="abc">
                 <div className="recent-view-section-img">
-                <img src="" alt="" className="rec-img" />
-                <h4><b>Mens Casual Premium Slim Fit</b></h4><br/>
+                <img src={bangle} alt="" className="rec-img" />
+                <h4><b> Gold & Silver  Bracelet</b></h4><br/>
                 <p>$144</p>
                 </div>
               
                 </div>
                 <div className="abc">
                 <div className="recent-view-section-img">
-                <img src="" alt="" className="rec-img" />
-                <h4><b>Mens Cotton Jacket</b></h4><br/>
+                <img src={hoodie} alt="" className="rec-img" />
+                <h4><b>Mens  Jacket</b></h4><br/>
                 <p>$55.99</p>
                 </div>
                 
                 </div>
                 <div className="abc">
                 <div className="recent-view-section-img">
-                <img src="" alt="" className="rec-img" />
-                <h4><b>White Gold Plated Princess</b></h4><br/>
+                <img src={tshrit} alt="" className="rec-img" />
+                <h4><b>Mens Casual  T-Shirts</b></h4><br/>
                 <p>$9.99</p>
                 </div>
                
                 </div>
                 <div className="abc">
                 <div className="recent-view-section-img">
-                <img src="" alt="" className="rec-img" />
-                <h4><b>Mens Casual Premium Slim Fit</b></h4><br/>
+                <img src={bangle} alt="" className="rec-img" />
+                <h4><b>Gold & Silver  Bracelet</b></h4><br/>
                 <p>$114</p>
                 </div>
                 </div>

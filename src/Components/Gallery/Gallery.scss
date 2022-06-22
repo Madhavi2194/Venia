@@ -1,8 +1,9 @@
-.thumbnail-container {
+.gallerycontainer {
     .column {
         img {
-           height: 110px; 
-           vertical-align: middle;
+          height: 85px;
+          vertical-align: middle;
+          margin: 5px 0;
 
         }
     }
@@ -16,13 +17,14 @@
 .mySlides 
 {
     img {
-    height: 680px;
-    width: 100%;
+      height: 680px;
+       width: 100%;
+      padding: 35px;
   }
 }
   
   /* Position the image container (needed to position the left and right arrows) */
-  .thumbnail-container {
+  .gallerycontainer {
     position: relative;
   }
   

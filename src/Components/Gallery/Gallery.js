@@ -1,9 +1,9 @@
 import React from "react";
-import "./ThumbnailCaraousal.scss";
+import "./Gallery.scss";
 import downArrow from '../../assests/arrow-down-grey.svg';
 
 
-const ThumbnailCaraousal = (props) => {
+const Gallery = (props) => {
 
     let slideIndex = 1;
     showSlides(slideIndex);
@@ -39,25 +39,25 @@ const ThumbnailCaraousal = (props) => {
     const image = props.image;
     console.log("temp",props.image);
     return (        
-        <div class="thumbnail-container aem-Grid aem-Grid--12">
+        <div class="gallerycontainer aem-Grid aem-Grid--12">
             <div class="row show-lg aem-GridColumn aem-GridColumn--default--2 visible_sm">
                 <div class="column">
-                    <img class="demo cursor" src={image} onClick={() => currentSlide(1)} alt="The Woods" />
+                    <img class="demo cursor" src={image} onClick={() => currentSlide(1)} alt="" />
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src={image} onClick={() => currentSlide(2)} alt="Cinque Terre" />
+                    <img class="demo cursor" src={image} onClick={() => currentSlide(2)} alt=" " />
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src={image} onClick={() => currentSlide(3)}  alt="Mountains and fjords" />
+                    <img class="demo cursor" src={image} onClick={() => currentSlide(3)}  alt="" />
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src={image} onClick={() => currentSlide(4)}  alt="Northern Lights" />
+                    <img class="demo cursor" src={image} onClick={() => currentSlide(4)}  alt="" />
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src={image} onClick={() => currentSlide(5)}  alt="Nature and sunrise" />
+                    <img class="demo cursor" src={image} onClick={() => currentSlide(5)}  alt="" />
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src={image} onClick={() => currentSlide(6)}  alt="Snowy Mountains" />
+                    <img class="demo cursor" src={image} onClick={() => currentSlide(6)}  alt="" />
                 </div>
 
                 <a class="next-slide"  onClick={() => plusSlides(1)}><img src={downArrow} alt="down arrow" /></a>
@@ -69,19 +69,19 @@ const ThumbnailCaraousal = (props) => {
                 </div>
 
                 <div class="mySlides">
-                    {/* <img src={require('./images/2.jpg')} /> */}
+                    
                 </div>
 
                 <div class="mySlides">
-                    {/* <img src={image} /> */}
+                   
                 </div>
 
                 <div class="mySlides">
-                    {/* <img src={image} /> */}
+                   
                 </div>
 
                 <div class="mySlides">
-                    {/* <img src={image} /> */}
+                   
                 </div>               
 
             </div>
@@ -92,4 +92,4 @@ const ThumbnailCaraousal = (props) => {
 
 };
 
-export default ThumbnailCaraousal;
+export default Gallery;

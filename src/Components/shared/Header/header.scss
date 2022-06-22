@@ -9,6 +9,7 @@
 }
 
 header {
+
   .header_wrapper{
     padding:0;
   }
@@ -16,7 +17,7 @@ header {
     display: var(--unnamed-display-flex);
   }
 
-  .navbar-brand{
+  .navbar-brand {
     padding: 17px 35px;
     text-align: center;
     width: 100%;
