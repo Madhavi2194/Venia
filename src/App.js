@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import './base.scss';
+import './aem-grid.css';
+import './breakpoints.scss';
+import Header from './Components/shared/Header/header';
 
-function App() {
+import Footer from './Components/shared/Footer/footer';
+
+
+
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="border-grey">
+      <Header/>
+      {props.children}
+     
+      <Footer/>
+     </div>
   );
 }
 
