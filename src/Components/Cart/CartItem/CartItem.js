@@ -28,7 +28,7 @@ function CartItem () {
         }
     }
 
-    // const CartItems = () => {
+    
         return(
             <section className="ui grid container">
                 <div className="shopping-cart-container">
@@ -37,7 +37,7 @@ function CartItem () {
                             return (
                                 <div key={ad.id} className="shopping-cart-section">
                                     <div className="cart-img-section">
-                                        <img src={ad.image} className="cartimg" alt="" />
+                                        <img src={ad.image} className="cartimg" alt={ad.title} />
                                     </div>
                                     <div className="cart-title-content">
                                         {ad.title} <br />
@@ -45,7 +45,7 @@ function CartItem () {
                                     </div>
 
                                     <div className="quantity-cart">
-                                        <button type="button" onClick={handleDecrement} className="input-grp-txt"><img  src={minus} className="minuscount-img-cart" /></button>
+                                        <button type="button" onClick={handleDecrement} className="input-grp-txt"><img  src={minus} className="minuscount-img-cart" alt="decrement"/></button>
                                         <div className="count-box">
                                             {quantity}
                                         </div>
@@ -54,19 +54,19 @@ function CartItem () {
 
                                     <div className="cart-quantity-handdle">
                                         <div className="handdle-section">
-                                            <img  src={edit} className="edit-img" />
+                                            <img  src={edit} className="edit-img" alt="edit-icon" />
                                             <div className="cart-handle-name">
                                                 <p>Edit Item</p>
                                             </div>
                                         </div>
                                         <div className="handdle-section">
-                                            <img  src={trash} className="remove-img" />
+                                            <img  src={trash} className="remove-img"  alt="delete-icon" />
                                             <div className="cart-handle-name">
                                                 <p>Remove Item</p>
                                             </div>
                                         </div>
                                         <div className="handdle-section">
-                                            <img  src={save} className="save-img" />
+                                            <img  src={save} className="save-img" alt="wishlist-icon" />
                                             <div className="cart-handle-name">
                                                 <p>Save for Later</p>
                                             </div>

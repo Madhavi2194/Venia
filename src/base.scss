@@ -1,5 +1,6 @@
 @import './mixins.scss';
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+@import url('https://fonts.cdnfonts.com/css/muli');
 :root {
 
     /* Colors: */
@@ -18,6 +19,7 @@
     --negative-2: #C9252D;
     --negative-1: #D7373F;
     --unnamed-color-172026: #172026;
+    --unnamed-color-1B252C:#1B252C;
     
     /* Font/text values */
     --unnamed-font-family-muli: Muli;
@@ -197,7 +199,7 @@
     }
     
     body{
-        font-family: 'Mulish', sans-serif;
+        font-family: var(--unnamed-font-family-muli);
     }
 
     ul li {
@@ -261,27 +263,47 @@
     .border-line {
       border-bottom: var(--unnamed-border-grey);
     }
-    .visible_sm{
-        display: var(--unnamed-display-none) !important;
-      }
-      .visible_lg_block{
+     .visible_lg_block{
         display: var(--unnamed-display-none) ;
       }
-      .flex-display{
+      .visible_sm_none{
+        display: var(--unnamed-display-none) ;
+      }
+      .visible_flex-display{
         display: var(--unnamed-display-flex);
       }
+      .logo-img {
+        width: 120px;
+      }
+      .display-block-lg{
+        display:none;
+      }
+      .display-block-sm{
+        display:block;
+      }
+
     @include desktop {
-        .visible_lg_block{
-            display:var(--unnamed-display-block)!important ;
+      .display-block-lg{
+        display:block;
+      }
+      .display-blocl-sm{
+        display:none;
+      }
+        .visible_sm_none{
+            display:var(--unnamed-display-none) ;
           }
-          .visible_sm{
-            display: var(--unnamed-display-flex) !important;
+          .visible_lg_flex{
+            display: var(--unnamed-display-flex) ;
           }
-          .visible_lg{
+          .visible_lg_none{
             display:var(--unnamed-display-none) !important;
           }
+          .display-lg-block{
+            display: var(--unnamed-display-block);
+          }
+          
         .container{
-             padding: 2% 7% 0% 7%;
+             padding: 0 100px;
         }
         .border-grey{
             border-bottom: 1px solid var(--gray-l1);

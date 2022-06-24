@@ -16,6 +16,9 @@
     margin:0 ;
     padding-bottom: 17px;
 }
+.title-section{
+    padding-top: 8px;
+}
 
 
 @include desktop {
@@ -30,5 +33,6 @@
         height:319px;
         width:100%;
     }
+    
    
 }

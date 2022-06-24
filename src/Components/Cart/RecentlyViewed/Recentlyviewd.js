@@ -19,7 +19,7 @@ function Recentlyviewed () {
              
                 <div className="abc">
                 <div className="recent-view-section-img">
-                <img src={bangle} alt="" className="rec-img" />
+                <img src={bangle} alt="product-bangle" className="rec-img" />
                 <h4><b> Gold & Silver  Bracelet</b></h4><br/>
                 <p>$144</p>
                 </div>
@@ -27,7 +27,7 @@ function Recentlyviewed () {
                 </div>
                 <div className="abc">
                 <div className="recent-view-section-img">
-                <img src={hoodie} alt="" className="rec-img" />
+                <img src={hoodie} alt="product-jacket" className="rec-img" />
                 <h4><b>Mens  Jacket</b></h4><br/>
                 <p>$55.99</p>
                 </div>
@@ -35,7 +35,7 @@ function Recentlyviewed () {
                 </div>
                 <div className="abc">
                 <div className="recent-view-section-img">
-                <img src={tshrit} alt="" className="rec-img" />
+                <img src={tshrit} alt="product-jacket" className="rec-img" />
                 <h4><b>Mens Casual  T-Shirts</b></h4><br/>
                 <p>$9.99</p>
                 </div>
@@ -43,7 +43,7 @@ function Recentlyviewed () {
                 </div>
                 <div className="abc">
                 <div className="recent-view-section-img">
-                <img src={bangle} alt="" className="rec-img" />
+                <img src={bangle} alt="product-bangle" className="rec-img" />
                 <h4><b>Gold & Silver  Bracelet</b></h4><br/>
                 <p>$114</p>
                 </div>

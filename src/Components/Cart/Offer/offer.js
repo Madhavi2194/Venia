@@ -15,7 +15,7 @@ function Offer() {
                 <p>Shipping to 91001</p>
             </div>
             <div className="cart-accordian-down-arrow">
-            <img src={down}  className="cart-accordian-down" />
+            <img src={down}  className="cart-accordian-down"  alt="down-icon" />
             </div>
             </div>
         </div>
@@ -28,7 +28,7 @@ function Offer() {
                 <p>40% discount applied</p>
             </div>
             <div className="cart-accordian-down-arrow">
-            <img src={down}  className="cart-accordian-down" />
+            <img src={down}  className="cart-accordian-down"  alt="down-icon"/>
             </div>
             </div>
         </div>
@@ -38,7 +38,7 @@ function Offer() {
             </div>
             <div className="cart-left-section">
             <div className="cart-accordian-down-arrow">
-            <img src={down}  className="cart-accordian-down" />
+            <img src={down}  className="cart-accordian-down"  alt="down-icon"/>
             </div>
             </div>
         </div>

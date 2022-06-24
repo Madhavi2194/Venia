@@ -1,61 +1,71 @@
 
 import React from "react";
 import "./footer.scss";
+import facebook from "../../../assests/facebook.png"
+import instagram from "../../../assests/instagram.png"
+import twitter from "../../../assests/twitter.png"
 
 
-class Footer extends React.Component{
-    constructor(){
+class Footer extends React.Component {
+    constructor() {
         super()
     }
-    render(){
-        return(
+    render() {
+        return (
             <footer>
-                <div className="foo-container">
-                    <div className="row">
-                        <div className="footer-col">
+                <hr />
+                <div className="footer-wrapper container">
+                    <div className="footer-division-wrapper">
+                        <div className="footer-division">
                             <h4>Account</h4>
-                            <ul>
-                                <li><a href="#">Sign In</a></li>
-                                <li><a href="#">Register</a></li>
-                                <li><a href="#">Order Status</a></li>
-                            </ul>
+                                <p>Sign In</p>
+                                <p>Register</p>
+                                <p>Order Status</p>
+                            
                         </div>
-                        <div className="footer-col">
+                        <div className="footer-division">
                             <h4>About Us</h4>
-                            <ul>
-                                <li><a href="#">Our Story</a></li>
-                                <li><a href="#">Careers</a></li>
-                            </ul>
+                                <p>Our Story</p>
+                                <p>Careers</p>
+                                <p>Order Status</p>
+                            
                         </div>
-                        <div className="footer-col">
+                        <div className="footer-division">
                             <h4>Help</h4>
-                            <ul>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Order Status</a></li>
-                                <li><a href="#">Returns</a></li>
-                            </ul>
+                                <p>Contact Us</p>
+                                <p>Order Status</p>
+                                <p>Returns</p>
+                            
                         </div>
-                        <div className="footer-col">
-                            <h4>Follow Us!</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                           
-        <div className="icons">
-           <div><img src={require("../../../assests/instagram.png")}  className="insta"/></div>
-           <div><img src= {require("../../../assests/facebook.png")} className="fcb"/></div>
-           <div><img src={require("../../../assests/twitter.png")} className="twt"/></div>
-            </div>  
+                        <div className="footer-division">
+                            <h4>Folloe Us !</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                    <div className="social_icon">
+                                    <div className="icon"><img src={instagram}  className="insta"  alt="instagram-icon" /></div>
+                                    <div className="icon"><img src={facebook} className="fcb"  alt="facebook-icon"/></div>
+                                    <div className="icon"><img src={twitter} className="twt"  alt="twitter-icon"/></div>
+                                </div>
                         </div>
+                        
+                        
+                        
                     </div>
                 </div>
-        <div className="btm-footer">
-        <img src={require("../../../assests/logo.png")} alt="taste of fruit" className="logo-img"/> 
-        <p className="content">© Company Name Address Ave, City Name, State ZIP</p>
-        <ul className="btmtxt">
-            <li className="list"><a href="#">Terms of Use</a></li>
-            <li className="list"><a href="#">Privacy Policy</a></li>
-         </ul>
-        </div>
-    </footer>
+                <hr className="copyright-line" />
+                <section className="container">
+                    <div className="copyright-wrapper">
+                       <div className ="footer-logo"> 
+                        <img src={require("../../../assests/logo.png")} alt="Logo-img" href="/venia" className="logo-img" />
+                        </div>
+                        <p className="copyright">© Company Name Address Ave, City Name, State ZIP</p>
+                         <div className="term-policy">
+                            <p className="terms"><a href="#">Terms of Use</a></p>
+                            <p className="terms"><a href="#">Privacy Policy</a></p>
+                        </div>
+                    </div>
+                </section>
+               
+            </footer>
         );
     }
 }

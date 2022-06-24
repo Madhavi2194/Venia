@@ -1,7 +1,10 @@
+@import '../../mixins.scss';
+
+
 .gallerycontainer {
     .column {
         img {
-          height: 85px;
+          height: 60px;
           vertical-align: middle;
           margin: 5px 0;
 
@@ -60,4 +63,18 @@
   .active,
   .demo:hover {
     opacity: 1;
+  }
+
+  @include desktop {
+    .gallerycontainer {
+      .column {
+          img {
+            height: 85px;
+            vertical-align: middle;
+            margin: 5px 0;
+  
+          }
+      }
+    }
+
   }

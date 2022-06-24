@@ -42,7 +42,7 @@ function ProductList() {
               <div className="grid-container-inner"  >
                 <Productdetails/>
               </div>
-               : <center><span><img src={loader} className="loader-img" /></span></center>
+               : <center><span><img src={loader} className="loader-img" alt="loader"/></span></center>
 
               }
             </div>

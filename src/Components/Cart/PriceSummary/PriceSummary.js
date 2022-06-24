@@ -59,7 +59,7 @@ function PricingSummary (){
                 </div>
                 <button className="checkout-btn"><i class="fa fa-user-o" aria-hidden="true"></i>CHECKOUT</button>
                 <div className="paypal-btn-img">
-                    <img src={paypal} className="paypal-img" />
+                    <img src={paypal} className="paypal-img"  alt="paypal-link"/>
                 </div>
             </section>
 </section>

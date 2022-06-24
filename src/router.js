@@ -3,6 +3,7 @@ import Home from "./Pages/Home/home";
 import Cart from "./Pages/Cart/CartPage";
 import ProductPage from "./Pages/ProductPage/ProductPage";
 import App from "./App";
+import PageNotFound from "./Components/PageNotFound/PageNotFound";
 
 const Router = () => (
 
@@ -32,6 +33,10 @@ const Router = () => (
                     <Cart></Cart>
 
                 } />
+                 <Route path="*" element={
+                    <PageNotFound></PageNotFound>
+                 }/>
+                
 
             </Routes>
 
