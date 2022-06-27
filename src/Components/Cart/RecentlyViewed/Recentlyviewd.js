@@ -9,7 +9,7 @@ import tshrit from '../../../assests/tshirt.jpg';
 function Recentlyviewed () {
     return(
         <> 
-        <section className="ui grid container">
+        <section className="ui grid container display-block-lg">
             <div className="heading">
                 <h1 className="recent-view-heading">Recently View</h1>
             </div>

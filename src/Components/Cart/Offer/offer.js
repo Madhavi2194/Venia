@@ -4,7 +4,7 @@ import down from '../../../assests/chevron-down.png';
 
 function Offer() {
     return(
-<section className="ui grid container">
+<section className="ui grid">
     <div className="cart-accordian-section">
         <div className="cart-accordian-info">
             <div className="cart-accordian-title">

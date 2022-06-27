@@ -2,10 +2,10 @@ import React from "react";
 import '../PriceSummary/PriceSummary.scss';
 import paypal from '../../../assests/paypal.png';
 
-function PricingSummary (){
-    return(
-        <section className="container">
-    <section className="price-summary-container">
+function PricingSummary() {
+    return (
+        <section>
+            <section className="price-summary-container">
                 <div className="price-summary-section">
                     <h2>Pricing Summary</h2>
                 </div>
@@ -59,10 +59,10 @@ function PricingSummary (){
                 </div>
                 <button className="checkout-btn"><i class="fa fa-user-o" aria-hidden="true"></i>CHECKOUT</button>
                 <div className="paypal-btn-img">
-                    <img src={paypal} className="paypal-img"  alt="paypal-link"/>
+                    <img src={paypal} className="paypal-img" alt="paypal-link" />
                 </div>
             </section>
-</section>
+        </section>
     )
 
 }
