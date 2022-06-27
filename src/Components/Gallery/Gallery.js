@@ -37,7 +37,7 @@ const Gallery = (props) => {
 
 
     const image = props.image;
-    console.log("temp",props.image);
+
     return (        
         <div class="gallerycontainer aem-Grid aem-Grid--12">
             <div class="row show-lg aem-GridColumn aem-GridColumn--default--2 visible_sm">
@@ -69,20 +69,24 @@ const Gallery = (props) => {
                 </div>
 
                 <div class="mySlides">
-                    
+                    <img src={image} alt="product-img" />
                 </div>
 
                 <div class="mySlides">
-                   
+                   <img src={image} alt="product-img" />
                 </div>
 
                 <div class="mySlides">
-                   
+                <img src={image} alt="product-img" />
                 </div>
 
                 <div class="mySlides">
-                   
-                </div>               
+                <img src={image} alt="product-img" />
+                </div> 
+                
+                <div class="mySlides">
+                <img src={image} alt="product-img" />
+                </div>              
 
             </div>
 
