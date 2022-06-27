@@ -20,9 +20,10 @@ Javascript - ES6
 ```
 ![Lighthouse_venia_mobile](https://user-images.githubusercontent.com/102793225/175862902-1ae5681a-f734-42f0-bddf-d1068c19bfad.PNG)
 
-## Desktop Report
-```
-![Lighthouse_venia_desktop](https://user-images.githubusercontent.com/102793225/175862938-ed60e488-3ff9-4fa9-bad3-8f9ed46dede8.PNG)
 
-```
+
+## Desktop Report
+
+![Lighthouse_venia_desktop](https://user-images.githubusercontent.com/102793225/175863399-483aa268-23bb-481e-bee0-dc7f302ecb53.PNG)
+
 
