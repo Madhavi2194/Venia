@@ -16,17 +16,18 @@ function CartItem() {
 
     const addCart = useSelector((state) => state.cart.cart);
     //Quantity IncDec start
-    const [quantity, setQuantity] = useState(1);
+    const [num, setQuantity] = useState(1);
+
     const handleDecrement = () => {
-        if (quantity > 1) {
-            setQuantity(prevCount => prevCount - 1); // decrement quantity
+        if (num > 1) {
+            setQuantity(prevCount => prevCount - 1); 
 
         }
     }
 
     const handleIncrement = () => {
-        if (quantity < 10) {
-            setQuantity(prevCount => prevCount + 1); // increment quantity
+        if (num < 10) {
+            setQuantity(prevCount => prevCount + 1); 
         }
     }
 
@@ -36,7 +37,9 @@ function CartItem() {
             <div className="shopping-cart-container">
                 {
                     addCart.map((ad, i) => {
+                        
                         return (
+                            
                             <>
                                 <section>
                                     <div className="mb-16">
@@ -45,6 +48,7 @@ function CartItem() {
                                     </div>
                                     <div className="cart-section-details aem-Grid aem-Grid--default--12 aem-Grid--phone--1">
                                         <div  className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--1">
+                                            
                                             <div className="aem-Grid aem-Grid--default--12 aem-Grid--phone--1">
                                                 <div key={ad.id} className="cart-section  aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--1 ">
                                                     <img src={ad.image} className="cartimg" alt={ad.title} />
@@ -57,7 +61,7 @@ function CartItem() {
                                                         <div className="visible_flex-display margin-cart">
                                                                 <span type="button" onClick={handleDecrement} className="input-grp-txt"><img src={minus} className="minuscount-img-cart" alt="decrement" /></span>
                                                                 <div className="count-box">
-                                                                <input type="text" className="form-control quantity-button-mobile" value={quantity} />
+                                                                <input type="text" className="form-control quantity-button-mobile" value={ad.quantity} />
                                                                 </div>
                                                                 <span type="button" onClick={handleIncrement} className="input-grp-txt"><img src={plus} className="pluscount-img-cart" alt="incerement-icon"/></span>
                                                         </div> 
@@ -72,7 +76,7 @@ function CartItem() {
                                                     <div className="quantity-cart visible_lg_block">
                                                         <span type="button" onClick={handleDecrement} className="input-grp-txt"><img src={minus} className="minuscount-img-cart" alt="decrement" /></span>
                                                         <div className="count-box">
-                                                        <input type="text" className="form-control  quantity-btn" value={quantity} />
+                                                        <input type="text" className="form-control  quantity-btn" value={ad.quantity} />
                                                         </div>
                                                         <span type="button" onClick={handleIncrement} className="input-grp-txt"><img src={plus} className="pluscount-img-cart" alt="increment-icon" /></span>
                                                     </div>
@@ -94,6 +98,7 @@ function CartItem() {
                                                     
                                                 </div>
                                             </div>
+
                                             <div className="aem-Grid aem-Grid--default--12 aem-Grid--phone--1">
                                             <Offer></Offer>
                                             </div>
@@ -107,50 +112,7 @@ function CartItem() {
                                     </div>
                                    
                                 </section>
-                                <section>
-                                    {/* <div key={ad.id} className="shopping-cart-section">
-                                    <div className="cart-section">
-                                        <img src={ad.image} className="cartimg" alt={ad.title} />
-                                    </div>
-                                    <div className="cart-title-content">
-                                        {ad.title} <br />
-                                        ${ad.price}
-                                    </div>
-
-                                    <div className="quantity-cart">
-                                        <button type="button" onClick={handleDecrement} className="input-grp-txt"><img  src={minus} className="minuscount-img-cart" alt="decrement"/></button>
-                                        <div className="count-box">
-                                            {quantity}
-                                        </div>
-                                        <button type="button" onClick={handleIncrement} className="input-grp-txt"><img  src={plus} className="pluscount-img-cart" /></button>
-                                    </div> */}
-
-                                    {/* <div className="cart-quantity-handdle">
-                                        <div className="handdle-section">
-                                            <img  src={edit} className="edit-img" alt="edit-icon" />
-                                            <div className="cart-handle-name">
-                                                <p>Edit Item</p>
-                                            </div>
-                                        </div>
-                                        <div className="handdle-section">
-                                            <img  src={trash} className="remove-img"  alt="delete-icon" />
-                                            <div className="cart-handle-name">
-                                                <p>Remove Item</p>
-                                            </div>
-                                        </div>
-                                        <div className="handdle-section">
-                                            <img  src={save} className="save-img" alt="wishlist-icon" />
-                                            <div className="cart-handle-name">
-                                                <p>Save for Later</p>
-                                            </div>
-                                        </div>
-                                    </div> */}
-                                    {/* <div className="pricing">
-                                      <PricingSummary />
-                                    </div> */}
-
-                                    {/* </div> */}
-                                </section>
+                               
                             </>
                         )
                     })
