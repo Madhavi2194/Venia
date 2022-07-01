@@ -9,7 +9,7 @@ import edit from '../../../assests/edit-2.png';
 import trash from '../../../assests/trash-2.png';
 import elipsis from '../../../assests/more-horizontal.png';
 import PricingSummary from "../PriceSummary/PriceSummary";
-import Offer from "../Offer/offer";
+import Accordion from "../Accordion/accordion";
 
 
 function CartItem() {
@@ -32,6 +32,34 @@ function CartItem() {
     }
 
 
+    const accordionData = [
+        {
+          title: 'Estimate your Shipping ',
+          content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+          laborum cupiditate possimus labore, hic temporibus velit dicta earum
+          suscipit commodi eum enim atque at? Et perspiciatis dolore iure
+          voluptatem.`,
+          subcontent:`Shipping to 91001`
+        },
+        {
+          title: 'Enter a Coupon Code ',
+          content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
+          reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
+          quaerat iure quos dolorum accusantium ducimus in illum vero commodi
+          pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
+          quidem maiores doloremque est numquam praesentium eos voluptatem amet!
+          Repudiandae, mollitia id reprehenderit a ab odit!`,
+          subcontent:`20% discount applied`
+        },
+        {
+          title: 'Apply Gift Card ',
+          content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
+          quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
+          dolor ut sequi minus iste? Quas?`
+          
+        }
+      ];
+
     const ProductList = (product) => {
         let total = +(product.price * product.quantity);
 
@@ -44,7 +72,7 @@ function CartItem() {
                             <h5>{product.title}</h5>
                             <p> Size: Medium</p>
                             <p> Color: Black</p>
-                            <p> ${product.price}</p>
+                            <p>Total: ${total}</p>
                             <div className="quantity-cart display-block-sm">
                                 <div className="visible_flex-display margin-cart">
                                     <span type="button" onClick={handleDecrement} className="input-grp-txt"><img src={minus} className="minuscount-img-cart" alt="decrement" /></span>
@@ -105,7 +133,12 @@ function CartItem() {
 
 
                                 <div className="aem-Grid aem-Grid--default--12 aem-Grid--phone--1">
-                                    <Offer></Offer>
+                                    
+                                    <div className="accordion">
+                                    {accordionData.map(({ title, content, subcontent }) => (
+                                    <Accordion title={title} content={content}subcontent={subcontent} />
+                                    ))}
+                                </div>
                                 </div>
                             </div>
 

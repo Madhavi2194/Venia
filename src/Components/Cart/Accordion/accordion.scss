@@ -1,6 +1,6 @@
 @import '../../../mixins.scss';
 
-.cart-accordian-info {
+.cart-accordian-detail {
     display: grid;
     grid-template-columns: 2fr 1fr;
     border: 1px solid #ddd;
@@ -12,27 +12,16 @@
     justify-content: flex-end;
 }
 
-.cart-accordian-title {
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-25) var(--unnamed-font-family-muli);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-172026);
-    text-align: left;
-    font: normal normal normal 17px/25px Muli;
-    letter-spacing: 0px;
-    color: #172026;
-    opacity: 1;
-    font-family: 'Mulish', sans-serif;
-    ;
-}
+
 
 .cart-accordian-section {
-    width: 100%;
-    padding: 0px;
-    margin: 10px 0;
+    
+    padding: 0;
+    
 }
 
 @include desktop {
-    .cart-accordian-info {
+    .cart-accordian-detail {
         display: grid;
         grid-template-columns: 2fr 1fr;
         border: 1px solid #ddd;
@@ -41,7 +30,10 @@
 
     .cart-left-section {
         display: flex;
+        border: 1px solid #ddd;
         justify-content: flex-end;
+        padding: 10px;
+        
     }
 
     .cart-accordian-title {
@@ -49,17 +41,11 @@
         letter-spacing: var(--unnamed-character-spacing-0);
         color: var(--unnamed-color-172026);
         text-align: left;
-        font: normal normal normal 17px/25px Muli;
         letter-spacing: 0px;
         color: #172026;
         opacity: 1;
-        font-family: 'Mulish', sans-serif;
-        ;
+     
     }
 
-    .cart-accordian-section {
-        width: 100%;
-        padding: 20px;
-      
-    }
+    
 }

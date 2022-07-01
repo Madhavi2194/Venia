@@ -82,10 +82,16 @@
         .margin-cart{
             margin:8px 0;
         }
+        .accordion{
+            margin: 20px 0;
+        }
     }
 }
 
 @include desktop {
+    .accordion{
+        padding:20px;
+    }  
     .shopping-cart-container {
         section {
             
@@ -177,6 +183,7 @@
                 color: var(--unnamed-color-172026);
                 margin: 15px 0;
                 }
+                 
         }
     }
 }

@@ -9,7 +9,7 @@ import tshrit from '../../../assests/tshirt.jpg';
 function Recentlyviewed () {
     return(
         <> 
-        <section className="ui grid container display-block-lg">
+        <section className="container display-block-lg recentlyview-wrapper">
             <div className="heading">
                 <h1 className="recent-view-heading">Recently View</h1>
             </div>
@@ -17,15 +17,15 @@ function Recentlyviewed () {
 
             <div className="recent-view-section">
              
-                <div className="abc">
-                <div className="recent-view-section-img">
+                <div className="">
+                <div className="recent-section-img">
                 <img src={bangle} alt="product-bangle" className="rec-img" />
                 <h4><b> Gold & Silver  Bracelet</b></h4><br/>
                 <p>$144</p>
                 </div>
               
                 </div>
-                <div className="abc">
+                <div className="">
                 <div className="recent-view-section-img">
                 <img src={hoodie} alt="product-jacket" className="rec-img" />
                 <h4><b>Mens  Jacket</b></h4><br/>
@@ -33,7 +33,7 @@ function Recentlyviewed () {
                 </div>
                 
                 </div>
-                <div className="abc">
+                <div className="">
                 <div className="recent-view-section-img">
                 <img src={tshrit} alt="product-jacket" className="rec-img" />
                 <h4><b>Mens Casual  T-Shirts</b></h4><br/>

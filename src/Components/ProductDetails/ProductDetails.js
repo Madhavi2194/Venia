@@ -44,7 +44,7 @@ function ProductDetails() {
     }, [productID]);
 
     /* Increment decrement */
-    let [num, setNum] = useState(0);
+    let [num, setNum] = useState(1);
     let incNum = () => {
         if (num < 10) {
             setNum(Number(num) + 1);
